@@ -10,13 +10,13 @@ def create(records)
   print '請輸入學生的名字：'
   record.name = gets.chomp
 
-  print '請出入要新增的成績：'
+  print '請輸入要新增的成績：'
   record.score = gets.chomp.to_i
 
   records.push record
 end
 
 def delete(records)
-  print '請問要刪除第幾個紀錄：'
+  print '請輸入要刪除第幾個紀錄：'
   records.delete_at gets.chomp.to_i - 1
 end

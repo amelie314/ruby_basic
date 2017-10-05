@@ -1,9 +1,12 @@
 def display(records)
   records.each do |record|
-    puts record.name + '：' + record.score.to_s + '分'
+    if record.score < 60
+      puts record.name + '：' + (record.score.to_s + '分').colorize(:red)
+    else
+      puts record.name + '：' + (record.score.to_s + '分').colorize(:green)
+    end
   end
 end
-
 def create(records)
   record = Record.new
 

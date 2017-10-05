@@ -1,3 +1,4 @@
+require 'colorize'
 require_relative 'record'
 require_relative 'method'
 
@@ -6,7 +7,7 @@ records = [
   Record.new('Monkey', 100)
 ]
 
-puts '輸入 1 檢視成績，2 新增成績，3 刪除成績，4 結束程式'
+puts '輸入 1 檢視成績，2 新增成績，3 刪除成績，4 結束程式'.colorize(:blue)
 
 while true
   print ' > '
